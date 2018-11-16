@@ -81,7 +81,7 @@ class LSM303(object):
         """
         # Setup I2C interface for accelerometer and magnetometer.
         if i2c is None:
-            import Adafruit.Adafruit_GPIO.I2C as I2C
+            import Adafruit_GPIO.I2C as I2C
             i2c = I2C
         self._accel = i2c.get_i2c_device(accel_address, **kwargs)
         self._mag = i2c.get_i2c_device(mag_address, **kwargs)
